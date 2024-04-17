@@ -1,0 +1,59 @@
+<head>
+    <title>Street Art of Lyon</title>
+	
+    <!-- link to the Leaflet stylesheet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" /> 
+	
+    <!-- link to the Leaflet JavaScript library-->
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	
+<!-- link to the stylesheet-->
+    <link rel="stylesheet" href="sstyle.css" /> 
+	
+<!-- link to JS file-->
+    <script language="javascript" type="text/javascript" src="lyonjava.js"></script>
+	
+</head>
+
+<body onload = initialize()>
+
+<div class="title">
+    <img src="site.png" alt="Image 1">
+    <h1>Street Art of Lyon</h1>
+	
+	<!-- Description of website --> 
+    <div class="box">
+     
+<p>"Street Art of Lyon" is designed to be an engaging and immersive platform that invites users to delve into the  street art scene of Lyon, France. 
+ Our website offers a comprehensive exploration of the city's vibrant street art, providing users with a rich tapestry of information and visuals to discover, learn, and appreciate.
+Beyond mere location markers, our platform seeks to deepen understanding by shedding light on the cultural, historical, and social significance of Lyon's street art. 
+By doing so, we aim to not only showcase the artistic expressions found within Lyon's streets but also to foster a deeper connection to the city's evolving cultural landscape.</p>
+ <p> Choose what you want to start with!</p>
+ <p> Click on a flag on the map to find out more </p>
+ <p> Add your own locations of street art</P>
+ <p> Or immerse yourself in our 3D view </P>
+ 
+ </div>
+ 
+ <div class="button-container">
+    <button id="addMarkerButton"><img src="marker.png" alt="Add Marker"></button>
+    <div class="button-text">Add Marker</div>
+    <br>
+    
+    <button onclick="window.location.href = '3dpage.html';"><img src="3dmap.png" alt="3D Map"></button>
+    <div class="button-text">3D Map</div>
+    <br>
+    
+    <button onclick="window.location.href = '2sources.html';"><img src="source.png" alt="Sources"></button>
+    <div class="button-text">Sources</div>
+    <br>
+</div>
+
+</body>
+
+</div>
+	
+  <!--The map div which hosts map object -->
+    <div id="mapdiv"></div>
+
+</html>
